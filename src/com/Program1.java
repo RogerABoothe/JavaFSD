@@ -28,7 +28,6 @@ public class Program1 {
 		
 		System.out.print("What is your salary?");
 		salary= scr.nextInt();
-		
 
 		System.out.println("Your full name is: " + name);
 		System.out.println("Your Job Title is: " + title);
