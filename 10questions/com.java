@@ -31,7 +31,7 @@ public class com {
 		
 		// question 2
 		System.out.println("Question 2");
-		System.out.println("Wha is the byte count for an int");
+		System.out.println("What is the byte count for an int");
 		System.out.println("1 - 2 bytes");
 		System.out.println("2 - 4 bytes");
 		System.out.println("3 - 8 bytes");
@@ -48,14 +48,12 @@ public class com {
 		
 		// question 3
 		System.out.println("Question 3");
-		System.out.println("Wha is the byte count for an int");
-		System.out.println("1 - 2 bytes");
-		System.out.println("2 - 4 bytes");
-		System.out.println("3 - 8 bytes");
-		System.out.println("4 - All this talk of bytes makes me hungry");
+		System.out.println("Is Mod (%) and arithmaetic operator?");
+		System.out.println("1 - Yes");
+		System.out.println("2 - No");
 		userSelection = scr.nextInt();
 		
-		if ( userSelection == 2 ) {
+		if ( userSelection == 1 ) {
 			userScore = userScore + 1;
 			System.out.println("That is correct!");
 		}
