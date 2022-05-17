@@ -60,6 +60,23 @@ public class com {
 		else {
 			System.out.println("Your answer was not correct");
 		}
+		
+		// question 4
+		System.out.println("Question 4");
+		System.out.println("Which is not a valid operator type");
+		System.out.println("1 - Logical");
+		System.out.println("2 - Relational");
+		System.out.println("3 - Bitwise");
+		System.out.println("4 - Math");
+		userSelection = scr.nextInt();
+		
+		if ( userSelection == 4 ) {
+			userScore = userScore + 1;
+			System.out.println("That is correct!");
+		}
+		else {
+			System.out.println("Your answer was not correct");
+		}
 
 	}
 
