@@ -77,6 +77,23 @@ public class com {
 		else {
 			System.out.println("Your answer was not correct");
 		}
+		
+		// question 5
+		System.out.println("Question 5");
+		System.out.println("What is not a Java package");
+		System.out.println("1 - JDK");
+		System.out.println("2 - VM");
+		System.out.println("3 - JVM");
+		System.out.println("4 - JRE");
+		userSelection = scr.nextInt();
+		
+		if ( userSelection == 2 ) {
+			userScore = userScore + 1;
+			System.out.println("That is correct!");
+		}
+		else {
+			System.out.println("Your answer was not correct");
+		}
 
 	}
 
