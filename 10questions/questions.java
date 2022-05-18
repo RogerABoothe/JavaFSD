@@ -2,23 +2,23 @@ import java.util.Scanner;
 
 public class questions {
 	private static int userScore;
-	private static int userSelection;
+	private static int userAns;
 	private static int correctAns;
 	
-	public int ansValidate ( int userSelection ){
+	public int ansValidate ( int userAns ){
 		Scanner scr = new Scanner(System.in);
 		
-		while ( userSelection < 1 || userSelection > 4) {
+		while ( userAns < 1 || userAns > 4) {
 			System.out.println("It seems you can't follow directions! Enter a number 1-4 for your selection");
-			userSelection = scr.nextInt();
+			userAns = scr.nextInt();
 		}
 		
-		return userSelection;
+		return userAns;
 	}
 	
-	public void ansCheck ( int userSelection, int correctAns ) {
+	public void ansCheck ( int userAns, int correctAns ) {
 		questions valid = new questions();
-		if ( valid.ansValidate(userSelection) == correctAns ) {
+		if ( valid.ansValidate(userAns) == correctAns ) {
 			userScore = userScore + 1;
 			System.out.println("That is correct!");
 		}
@@ -66,9 +66,9 @@ public class questions {
 		System.out.println("2 - Primitive and Advanced");
 		System.out.println("3 - Modern and Future");
 		System.out.println("4 - Int and String");
-		userSelection = scr.nextInt();
+		userAns = scr.nextInt();
 		correctAns = 1;
-		check.ansCheck(userSelection, correctAns);
+		check.ansCheck(userAns, correctAns);
 		
 		// question 2
 		System.out.println("Question 2");
@@ -77,18 +77,18 @@ public class questions {
 		System.out.println("2 - 4 bytes");
 		System.out.println("3 - 8 bytes");
 		System.out.println("4 - All this talk of bytes makes me hungry");
-		userSelection = scr.nextInt();
+		userAns = scr.nextInt();
 		correctAns = 2;
-		check.ansCheck(userSelection, correctAns);
+		check.ansCheck(userAns, correctAns);
 		
 		// question 3
 		System.out.println("Question 3");
 		System.out.println("Is Mod (%) and arithmaetic operator?");
 		System.out.println("1 - Yes");
 		System.out.println("2 - No");
-		userSelection = scr.nextInt();
+		userAns = scr.nextInt();
 		correctAns = 1;
-		check.ansCheck(userSelection, correctAns);
+		check.ansCheck(userAns, correctAns);
 		
 		// question 4
 		System.out.println("Question 4");
@@ -97,9 +97,9 @@ public class questions {
 		System.out.println("2 - Relational");
 		System.out.println("3 - Bitwise");
 		System.out.println("4 - Math");
-		userSelection = scr.nextInt();
+		userAns = scr.nextInt();
 		correctAns = 4;
-		check.ansCheck(userSelection, correctAns);
+		check.ansCheck(userAns, correctAns);
 		
 		// question 5
 		System.out.println("Question 5");
@@ -108,9 +108,9 @@ public class questions {
 		System.out.println("2 - VM");
 		System.out.println("3 - JVM");
 		System.out.println("4 - JRE");
-		userSelection = scr.nextInt();
+		userAns = scr.nextInt();
 		correctAns = 2;
-		check.ansCheck(userSelection, correctAns);
+		check.ansCheck(userAns, correctAns);
 		
 		// question 6
 		System.out.println("Question 6");
@@ -119,9 +119,9 @@ public class questions {
 		System.out.println("2 - for");
 		System.out.println("3 - while");
 		System.out.println("4 - do while");
-		userSelection = scr.nextInt();
+		userAns = scr.nextInt();
 		correctAns = 1;
-		check.ansCheck(userSelection, correctAns);
+		check.ansCheck(userAns, correctAns);
 		
 		// question 7
 		System.out.println("Question 7");
@@ -130,9 +130,9 @@ public class questions {
 		System.out.println("2 - Private");
 		System.out.println("3 - Secluded");
 		System.out.println("4 - Default");
-		userSelection = scr.nextInt();
+		userAns = scr.nextInt();
 		correctAns = 3;
-		check.ansCheck(userSelection, correctAns);
+		check.ansCheck(userAns, correctAns);
 		
 		// question 8
 		System.out.println("Question 8");
@@ -141,9 +141,9 @@ public class questions {
 		System.out.println("2 - Complicate the code");
 		System.out.println("3 - Increase the number of lines");
 		System.out.println("4 - Clean up code to reduce technical debt");
-		userSelection = scr.nextInt();
+		userAns = scr.nextInt();
 		correctAns = 4;
-		check.ansCheck(userSelection, correctAns);
+		check.ansCheck(userAns, correctAns);
 		
 		// question 9
 		System.out.println("Question 9");
@@ -152,9 +152,9 @@ public class questions {
 		System.out.println("2 - long");
 		System.out.println("3 - double");
 		System.out.println("4 - extra long");
-		userSelection = scr.nextInt();
+		userAns = scr.nextInt();
 		correctAns = 4;
-		check.ansCheck(userSelection, correctAns);
+		check.ansCheck(userAns, correctAns);
 		
 		// question 10
 		System.out.println("Question 10");
@@ -163,9 +163,9 @@ public class questions {
 		System.out.println("2 - No advantages over other languages");
 		System.out.println("3 - Works in Windows OS only");
 		System.out.println("4 - It can run on any *nix");
-		userSelection = scr.nextInt();
+		userAns = scr.nextInt();
 		correctAns = 1;
-		check.ansCheck(userSelection, correctAns);
+		check.ansCheck(userAns, correctAns);
 		
 		// display results
 		result.userResult(userScore) ; 
