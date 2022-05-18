@@ -128,6 +128,23 @@ public class com {
 		else {
 			System.out.println("Your answer was not correct");
 		}
+		
+		// question 8
+		System.out.println("Question 8");
+		System.out.println("Which of these is a reason to refactor code?");
+		System.out.println("1 - Change the functionality");
+		System.out.println("2 - Complicate the code");
+		System.out.println("3 - Increase the number of lines");
+		System.out.println("4 - Clean up code to reduce technical debt");
+		userSelection = scr.nextInt();
+		
+		if ( userSelection == 4 ) {
+			userScore = userScore + 1;
+			System.out.println("That is correct!");
+		}
+		else {
+			System.out.println("Your answer was not correct");
+		}
 
 	}
 
