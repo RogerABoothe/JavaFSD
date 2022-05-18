@@ -145,6 +145,23 @@ public class com {
 		else {
 			System.out.println("Your answer was not correct");
 		}
+		
+		// question 9
+		System.out.println("Question 9");
+		System.out.println("Which of these is not a Java data type");
+		System.out.println("1 - short");
+		System.out.println("2 - long");
+		System.out.println("3 - double");
+		System.out.println("4 - extra long");
+		userSelection = scr.nextInt();
+		
+		if ( userSelection == 4 ) {
+			userScore = userScore + 1;
+			System.out.println("That is correct!");
+		}
+		else {
+			System.out.println("Your answer was not correct");
+		}
 
 	}
 
