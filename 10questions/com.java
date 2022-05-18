@@ -94,6 +94,23 @@ public class com {
 		else {
 			System.out.println("Your answer was not correct");
 		}
+		
+		// question 6
+		System.out.println("Question 6");
+		System.out.println("Which of these is not a loop");
+		System.out.println("1 - until");
+		System.out.println("2 - for");
+		System.out.println("3 - while");
+		System.out.println("4 - do while");
+		userSelection = scr.nextInt();
+		
+		if ( userSelection == 1 ) {
+			userScore = userScore + 1;
+			System.out.println("That is correct!");
+		}
+		else {
+			System.out.println("Your answer was not correct");
+		}
 
 	}
 
