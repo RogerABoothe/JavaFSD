@@ -17,8 +17,8 @@ public class questions {
 	}
 	
 	public void ansCheck ( int userSelection, int correctAns ) {
-		questions ansValid = new questions();
-		if ( ansValid.ansValidate(userSelection) == correctAns ) {
+		questions valid = new questions();
+		if ( valid.ansValidate(userSelection) == correctAns ) {
 			userScore = userScore + 1;
 			System.out.println("That is correct!");
 		}
@@ -27,8 +27,29 @@ public class questions {
 		}
 	}
 	
+	public void userResult ( int userScore ) {
+		System.out.println("The test is now complete!");
+		System.out.println("Your score is: " + userScore);
+		
+		if ( userScore >= 7) {
+			System.out.println("You passed!");
+			System.out.println("Great job!");
+		}
+		else if ( userScore == 6) {
+			System.out.println("You didn't pass but you were close");
+		}
+		else if ( userScore < 6 ) {
+			System.out.println("You failed the quiz. Please review the module again");
+		}
+		else {
+			System.out.println("This block is unreachable!!!");
+		}
+		
+	}
+	
 	public static void main(String[] args) {
 		questions check = new questions();
+		questions result = new questions();
 		Scanner scr = new Scanner(System.in);
 		
 		System.out.println("Welcome to the Java FSD quiz! You will be tested on various questions about Java.");
@@ -146,22 +167,8 @@ public class questions {
 		correctAns = 1;
 		check.ansCheck(userSelection, correctAns);
 		
-		System.out.println("The test is now complete!");
-		System.out.println("Your score is: " + userScore);
-		
-		if ( userScore >= 7) {
-			System.out.println("You passed!");
-			System.out.println("Great job!");
-		}
-		else if ( userScore == 6) {
-			System.out.println("You didn't pass but you were close");
-		}
-		else if ( userScore < 6 ) {
-			System.out.println("You failed the quiz. Please review the module again");
-		}
-		else {
-			System.out.println("This block is unreachable!!!");
-		}
+		// display results
+		result.userResult(userScore) ; 
 
 	}
 
