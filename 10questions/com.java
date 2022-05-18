@@ -179,6 +179,23 @@ public class com {
 		else {
 			System.out.println("Your answer was not correct");
 		}
+		
+		System.out.println("The test is now complete!");
+		System.out.println("Your score is: " + userScore);
+		
+		if ( userScore >= 7) {
+			System.out.println("You passed!");
+			System.out.println("Great job!");
+		}
+		else if ( userScore == 6) {
+			System.out.println("You didn't pass but you were close");
+		}
+		else if ( userScore < 6 ) {
+			System.out.println("You failed the quiz. Please review the module again");
+		}
+		else {
+			System.out.println("This block is unreachable!!!");
+		}
 
 	}
 
