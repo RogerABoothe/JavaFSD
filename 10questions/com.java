@@ -13,7 +13,6 @@ public class com {
 			userSelection = scr.nextInt();
 		}
 		
-		scr.close();
 		return userSelection;
 	}
 	
@@ -146,8 +145,6 @@ public class com {
 		userSelection = scr.nextInt();
 		correctAns = 1;
 		check.ansCheck(userSelection, correctAns);
-		
-		scr.close();
 		
 		System.out.println("The test is now complete!");
 		System.out.println("Your score is: " + userScore);
