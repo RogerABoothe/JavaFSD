@@ -111,6 +111,23 @@ public class com {
 		else {
 			System.out.println("Your answer was not correct");
 		}
+		
+		// question 7
+		System.out.println("Question 7");
+		System.out.println("Which is not an access specificer");
+		System.out.println("1 - Public");
+		System.out.println("2 - Private");
+		System.out.println("3 - Secluded");
+		System.out.println("4 - Default");
+		userSelection = scr.nextInt();
+		
+		if ( userSelection == 3 ) {
+			userScore = userScore + 1;
+			System.out.println("That is correct!");
+		}
+		else {
+			System.out.println("Your answer was not correct");
+		}
 
 	}
 
