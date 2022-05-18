@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class com {
+public class questions {
 	private static int userScore;
 	private static int userSelection;
 	private static int correctAns;
@@ -17,7 +17,7 @@ public class com {
 	}
 	
 	public void ansCheck ( int userSelection, int correctAns ) {
-		com ansValid = new com();
+		questions ansValid = new questions();
 		if ( ansValid.ansValidate(userSelection) == correctAns ) {
 			userScore = userScore + 1;
 			System.out.println("That is correct!");
@@ -28,7 +28,7 @@ public class com {
 	}
 	
 	public static void main(String[] args) {
-		com check = new com();
+		questions check = new questions();
 		Scanner scr = new Scanner(System.in);
 		
 		System.out.println("Welcome to the Java FSD quiz! You will be tested on various questions about Java.");
