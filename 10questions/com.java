@@ -16,7 +16,7 @@ public class com {
 		System.out.println("Question 1");
 		System.out.println("What are the two types of data types");
 		System.out.println("1 - Primitive and non primitive");
-		System.out.println("2 - Primaative and Advanced");
+		System.out.println("2 - Primitive and Advanced");
 		System.out.println("3 - Modern and Future");
 		System.out.println("4 - Int and String");
 		userSelection = scr.nextInt();
