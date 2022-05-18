@@ -162,6 +162,23 @@ public class com {
 		else {
 			System.out.println("Your answer was not correct");
 		}
+		
+		// question 10
+		System.out.println("Question 10");
+		System.out.println("What is an advantage of Java");
+		System.out.println("1 - It is mobile/works on any OS with JRE installed");
+		System.out.println("2 - No advantages over other languages");
+		System.out.println("3 - Works in Windows OS only");
+		System.out.println("4 - It can run on any *nix");
+		userSelection = scr.nextInt();
+		
+		if ( userSelection == 1 ) {
+			userScore = userScore + 1;
+			System.out.println("That is correct!");
+		}
+		else {
+			System.out.println("Your answer was not correct");
+		}
 
 	}
 
