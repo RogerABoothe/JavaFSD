@@ -8,7 +8,7 @@ public class questions {
 	static Scanner scr = new Scanner(System.in);
 	
 	public int ansValidate ( int userAns ){
-		while ( userAns < 1 || userAns > 4) {
+		while ( userAns < 1 || userAns > 4 ) {
 			System.out.println("It seems you can't follow directions! Enter a number 1-4 for your selection!");
 			invAnsCount = invAnsCount + 1  ;
 			userAns = ansInt();
@@ -22,7 +22,7 @@ public class questions {
 			try {
 				return scr.nextInt();
 			}
-			catch (InputMismatchException e) {
+			catch ( InputMismatchException e ) {
 				scr.next();
 				invAnsCount = invAnsCount + 1  ;
 				System.out.println("You have not entered a number 1-4, I think that was a string!");
@@ -64,7 +64,7 @@ public class questions {
 		
 	}
 	
-	public static void main(String[] args) {
+	public static void main( String[] args ) {
 		questions check = new questions();
 		questions result = new questions();
 		
