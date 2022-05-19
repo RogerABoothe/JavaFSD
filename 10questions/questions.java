@@ -1,13 +1,12 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class questions {
 	private static int userScore;
 	private static int userAns;
 	private static int correctAns;
+	static Scanner scr = new Scanner(System.in);
 	
 	public int ansValidate ( int userAns ){
-		Scanner scr = new Scanner(System.in);
-		
 		while ( userAns < 1 || userAns > 4) {
 			System.out.println("It seems you can't follow directions! Enter a number 1-4 for your selection");
 			userAns = scr.nextInt();
@@ -50,7 +49,6 @@ public class questions {
 	public static void main(String[] args) {
 		questions check = new questions();
 		questions result = new questions();
-		Scanner scr = new Scanner(System.in);
 		
 		System.out.println("Welcome to the Java FSD quiz! You will be tested on various questions about Java.");
 		System.out.println("Before we being, please note that this is a graded quiz.");
