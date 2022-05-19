@@ -4,11 +4,13 @@ public class questions {
 	private static int userScore;
 	private static int userAns;
 	private static int correctAns;
+	private static int invAnsCount;
 	static Scanner scr = new Scanner(System.in);
 	
 	public int ansValidate ( int userAns ){
 		while ( userAns < 1 || userAns > 4) {
-			System.out.println("It seems you can't follow directions! Enter a number 1-4 for your selection");
+			System.out.println("It seems you can't follow directions! Enter a number 1-4 for your selection!");
+			invAnsCount = invAnsCount + 1  ;
 			userAns = ansInt();
 		}
 		
@@ -22,6 +24,7 @@ public class questions {
 			}
 			catch (InputMismatchException e) {
 				scr.next();
+				invAnsCount = invAnsCount + 1  ;
 				System.out.println("You have not entered a number 1-4, I think that was a string!");
 			}
 		}
@@ -41,12 +44,16 @@ public class questions {
 	public void userResult ( int userScore ) {
 		System.out.println("The test is now complete!");
 		System.out.println("Your score is: " + userScore);
+		System.out.println("You entered " + invAnsCount + " invaild answers causing us to ask again!");
 		
-		if ( userScore >= 7) {
+		if ( userScore >= 7 && invAnsCount < 5) {
 			System.out.println("You passed!");
 			System.out.println("Great job!");
 		}
-		else if ( userScore == 6) {
+		else if ( invAnsCount > 5) {
+			System.out.println("You would have passed if you could follow directions!");
+		}
+		else if ( userScore == 6 ) {
 			System.out.println("You didn't pass but you were close");
 		}
 		else if ( userScore < 6 ) {
@@ -64,10 +71,11 @@ public class questions {
 		
 		System.out.println("Welcome to the Java FSD quiz! You will be tested on various questions about Java.");
 		System.out.println("Before we being, please note that this is a graded quiz.");
-		System.out.println("To pass you need to get seven (7) or more points!");
+		System.out.println("To pass you need to get seven (7) or more points! Also you can't give more than 5 invalid answer formats!");
 		System.out.println("Good luck!");
 		
 		userScore = 0;
+		invAnsCount = 0;
 		
 		// question 1 
 		System.out.println("Question 1");
