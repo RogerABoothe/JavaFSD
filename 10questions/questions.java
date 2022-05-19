@@ -47,17 +47,16 @@ public class questions {
 		System.out.println("You entered " + invAnsCount + " invaild answers causing us to ask again!");
 		
 		if ( userScore >= 7 && invAnsCount < 5) {
-			System.out.println("You passed!");
-			System.out.println("Great job!");
+			System.out.println("You passed! \nGreat Job!");
 		}
 		else if ( invAnsCount > 5) {
 			System.out.println("You would have passed if you could follow directions!");
 		}
 		else if ( userScore == 6 ) {
-			System.out.println("You didn't pass but you were close");
+			System.out.println("You didn't pass but you were close.");
 		}
 		else if ( userScore < 6 ) {
-			System.out.println("You failed the quiz. Please review the module again");
+			System.out.println("You failed the quiz. Please review the module again.");
 		}
 		else {
 			System.out.println("This block is unreachable!!!");
@@ -79,7 +78,7 @@ public class questions {
 		
 		// question 1 
 		System.out.println("Question 1");
-		System.out.println("What are the two types of data types");
+		System.out.println("What are the two types of data types?");
 		System.out.println("1 - Primitive and non primitive");
 		System.out.println("2 - Primitive and Advanced");
 		System.out.println("3 - Modern and Future");
@@ -90,7 +89,7 @@ public class questions {
 		
 		// question 2
 		System.out.println("Question 2");
-		System.out.println("What is the byte count for an int");
+		System.out.println("What is the byte count for an int?");
 		System.out.println("1 - 2 bytes");
 		System.out.println("2 - 4 bytes");
 		System.out.println("3 - 8 bytes");
@@ -110,7 +109,7 @@ public class questions {
 		
 		// question 4
 		System.out.println("Question 4");
-		System.out.println("Which is not a valid operator type");
+		System.out.println("Which is not a valid operator type?");
 		System.out.println("1 - Logical");
 		System.out.println("2 - Relational");
 		System.out.println("3 - Bitwise");
@@ -121,7 +120,7 @@ public class questions {
 		
 		// question 5
 		System.out.println("Question 5");
-		System.out.println("What is not a Java package");
+		System.out.println("What is not a Java package?");
 		System.out.println("1 - JDK");
 		System.out.println("2 - VM");
 		System.out.println("3 - JVM");
@@ -132,7 +131,7 @@ public class questions {
 		
 		// question 6
 		System.out.println("Question 6");
-		System.out.println("Which of these is not a loop");
+		System.out.println("Which of these is not a loop?");
 		System.out.println("1 - until");
 		System.out.println("2 - for");
 		System.out.println("3 - while");
@@ -143,7 +142,7 @@ public class questions {
 		
 		// question 7
 		System.out.println("Question 7");
-		System.out.println("Which is not an access specificer");
+		System.out.println("Which is not an access specificer?");
 		System.out.println("1 - Public");
 		System.out.println("2 - Private");
 		System.out.println("3 - Secluded");
@@ -165,7 +164,7 @@ public class questions {
 		
 		// question 9
 		System.out.println("Question 9");
-		System.out.println("Which of these is not a Java data type");
+		System.out.println("Which of these is not a Java data type?");
 		System.out.println("1 - short");
 		System.out.println("2 - long");
 		System.out.println("3 - double");
@@ -176,7 +175,7 @@ public class questions {
 		
 		// question 10
 		System.out.println("Question 10");
-		System.out.println("What is an advantage of Java");
+		System.out.println("What is an advantage of Java?");
 		System.out.println("1 - It is mobile/works on any OS with JRE installed");
 		System.out.println("2 - No advantages over other languages");
 		System.out.println("3 - Works in Windows OS only");
