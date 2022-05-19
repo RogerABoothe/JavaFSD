@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class questions {
 	private static int userScore;
