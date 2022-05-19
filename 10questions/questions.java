@@ -1,7 +1,5 @@
 import java.util.*;
 
-// update test
-
 public class questions {
 	private static int userScore;
 	private static int userAns;
@@ -11,10 +9,22 @@ public class questions {
 	public int ansValidate ( int userAns ){
 		while ( userAns < 1 || userAns > 4) {
 			System.out.println("It seems you can't follow directions! Enter a number 1-4 for your selection");
-			userAns = scr.nextInt();
+			userAns = ansInt();
 		}
 		
 		return userAns;
+	}
+	
+	public static int ansInt() {
+		while ( true ) {
+			try {
+				return scr.nextInt();
+			}
+			catch (InputMismatchException e) {
+				scr.next();
+				System.out.println("You have not entered a number 1-4, I think that was a string!");
+			}
+		}
 	}
 	
 	public void ansCheck ( int userAns, int correctAns ) {
@@ -66,7 +76,7 @@ public class questions {
 		System.out.println("2 - Primitive and Advanced");
 		System.out.println("3 - Modern and Future");
 		System.out.println("4 - Int and String");
-		userAns = scr.nextInt();
+		userAns = ansInt();
 		correctAns = 1;
 		check.ansCheck(userAns, correctAns);
 		
@@ -77,7 +87,7 @@ public class questions {
 		System.out.println("2 - 4 bytes");
 		System.out.println("3 - 8 bytes");
 		System.out.println("4 - All this talk of bytes makes me hungry");
-		userAns = scr.nextInt();
+		userAns = ansInt();
 		correctAns = 2;
 		check.ansCheck(userAns, correctAns);
 		
@@ -86,7 +96,7 @@ public class questions {
 		System.out.println("Is Mod (%) and arithmaetic operator?");
 		System.out.println("1 - Yes");
 		System.out.println("2 - No");
-		userAns = scr.nextInt();
+		userAns = ansInt();
 		correctAns = 1;
 		check.ansCheck(userAns, correctAns);
 		
@@ -97,7 +107,7 @@ public class questions {
 		System.out.println("2 - Relational");
 		System.out.println("3 - Bitwise");
 		System.out.println("4 - Math");
-		userAns = scr.nextInt();
+		userAns = ansInt();
 		correctAns = 4;
 		check.ansCheck(userAns, correctAns);
 		
@@ -108,7 +118,7 @@ public class questions {
 		System.out.println("2 - VM");
 		System.out.println("3 - JVM");
 		System.out.println("4 - JRE");
-		userAns = scr.nextInt();
+		userAns = ansInt();
 		correctAns = 2;
 		check.ansCheck(userAns, correctAns);
 		
@@ -119,7 +129,7 @@ public class questions {
 		System.out.println("2 - for");
 		System.out.println("3 - while");
 		System.out.println("4 - do while");
-		userAns = scr.nextInt();
+		userAns = ansInt();
 		correctAns = 1;
 		check.ansCheck(userAns, correctAns);
 		
@@ -130,7 +140,7 @@ public class questions {
 		System.out.println("2 - Private");
 		System.out.println("3 - Secluded");
 		System.out.println("4 - Default");
-		userAns = scr.nextInt();
+		userAns = ansInt();
 		correctAns = 3;
 		check.ansCheck(userAns, correctAns);
 		
@@ -141,7 +151,7 @@ public class questions {
 		System.out.println("2 - Complicate the code");
 		System.out.println("3 - Increase the number of lines");
 		System.out.println("4 - Clean up code to reduce technical debt");
-		userAns = scr.nextInt();
+		userAns = ansInt();
 		correctAns = 4;
 		check.ansCheck(userAns, correctAns);
 		
@@ -152,7 +162,7 @@ public class questions {
 		System.out.println("2 - long");
 		System.out.println("3 - double");
 		System.out.println("4 - extra long");
-		userAns = scr.nextInt();
+		userAns = ansInt();
 		correctAns = 4;
 		check.ansCheck(userAns, correctAns);
 		
@@ -163,7 +173,7 @@ public class questions {
 		System.out.println("2 - No advantages over other languages");
 		System.out.println("3 - Works in Windows OS only");
 		System.out.println("4 - It can run on any *nix");
-		userAns = scr.nextInt();
+		userAns = ansInt();
 		correctAns = 1;
 		check.ansCheck(userAns, correctAns);
 		
