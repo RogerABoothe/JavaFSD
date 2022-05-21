@@ -47,10 +47,10 @@ public class questions {
 		System.out.println("Your score is: " + userScore);
 		System.out.println("You entered " + invAnsCount + " invaild answers causing us to ask again!");
 		
-		if ( userScore >= 7 && invAnsCount < 5) {
+		if ( userScore >= 7 && invAnsCount < 5 ) {
 			System.out.println("You passed! \nGreat Job!");
 		}
-		else if ( invAnsCount > 5) {
+		else if ( invAnsCount > 5 ) {
 			System.out.println("You would have passed if you could follow directions!");
 		}
 		else if ( userScore == 6 ) {
